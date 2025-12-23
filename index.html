@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakib Hossain - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar --->
+  <nav class="w-full fixed top-0 left-0 bg-sky-300 shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Rakib Hossain</h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 text-lg">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobileMenu" class="hidden flex-col bg-white w-full px-6 pb-4 md:hidden text-lg border-t">
+      <li class="py-2"><a href="#home" class="hover:text-blue-600">Home</a></li>
+      <li class="py-2"><a href="#about" class="hover:text-blue-600">About</a></li>
+      <li class="py-2"><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+      <li class="py-2"><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+      <li class="py-2"><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-white pt-20 bg-yellow-400">
+    <div class="text-center max-w-2xl">
+     <div class="absolute inset-0 bg-cover bg-center"
+       style="background-image: url('');">
+     </div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-6">Hi, I'm <span class="text-blue-600">Rakib Hossain</span></h2>
+      <p class="text-lg text-gray-600 mb-6">I am a Passionate Frontend Web Developer Specializing in HTML5, CSS3, JavaScript, And CSS framework Bootstrap, Tailwind css, & JavaScript Framework React, Vue.js, And Version Control System (git & github) etc.</p>
+      <a href="#" class="px-6 py-3 bg-blue-600 font-bold text-2xl text-white rounded-lg hover:bg-blue-700">Hire Me</a>
+    </div>
+    <div class="absolute inset-0 bg-cover bg-center"
+       style="background-image: url('');">
+     </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-100">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
+        I am a passionate  Fontend Web Developer learning to become a Full‑Stack Developer. I focus on Backend using PHP & MySQL, and also love building modern UI with Tailwind CSS. I am preparing for international career opportunities and working to enhance my portfolio.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">My Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-6 bg-gray-100 rounded-xl shadow">HTML</div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow">CSS</div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow">Tailwind</div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow">JavaScript</div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow">Bootstrap</div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow">React</div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow">WordPress</div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow">GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-3">Portfolio Website</h3>
+          <p class="text-gray-600 mb-4">A modern personal portfolio built with Tailwind CSS.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-3">Login System (PHP)</h3>
+          <p class="text-gray-600 mb-4">User authentication system using PHP & MySQL.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-3">WordPress Theme Customization</h3>
+          <p class="text-gray-600 mb-4">Customized themes for clients using WordPress.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p class="text-lg text-gray-700 mb-6">Feel free to reach out for collaboration or project inquiries.</p>
+      <a href="mailto:yourmail@gmail.com" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 Rakib Hossain. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
